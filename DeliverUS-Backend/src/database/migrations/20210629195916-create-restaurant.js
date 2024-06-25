@@ -86,6 +86,15 @@ module.exports = {
           },
           key: 'id'
         }
+      },
+      // SOLUCIÓN
+      pinned: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
+      },
+      pinnedAt: {
+        allowNull: true,
+        type: Sequelize.DATE
       }
     })
   },
